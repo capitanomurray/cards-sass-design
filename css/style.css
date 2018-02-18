@@ -8,6 +8,8 @@ body {
   text-align: center; }
   .info h1 {
     font-size: 20px; }
+  .info .underline {
+    border-bottom: 4px solid #e74c3c; }
 
 .card {
   position: relative;
