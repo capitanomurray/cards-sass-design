@@ -15,14 +15,30 @@ body {
   display: block;
   background: #ffffff;
   min-width: 270px;
-  height: 470px;
-  text-align: center; }
+  height: 600px; }
   .card .card-info {
     position: absolute;
     bottom: 0;
     background: #ffffff;
     width: 100%;
     padding: 30px; }
+    .card .card-info .title {
+      margin: 0;
+      padding: 0 0 10px;
+      color: #333333;
+      font-size: 26px;
+      font-weight: 700; }
+    .card .card-info .sub-title {
+      margin: 0;
+      padding: 0 0 20px;
+      color: #e74c3c;
+      font-size: 20px;
+      font-weight: 400; }
+    .card .card-info .time-comments {
+      margin: 30px 0 0;
+      color: #999999; }
+    .card .card-info .timestamp {
+      margin: 0 16px 0 0; }
   .card .category {
     position: absolute;
     top: -40px;
