@@ -1,4 +1,100 @@
+$red: #e74c3c
+$white: #ffffff
+$gray: #f2f2f2
+
+body
+  font-family: 'Montserrat', sans-serif
+  background: $gray
+
+.info
+    width: 300px
+    margin: 50px auto
+    text-align: center
+
+    h1
+      font-size: 20px
+
+    .underline
+      border-bottom: 4px solid $red
+
 .card
-  border: 2px solid #000
-  padding: 20px
-  margin: 20px
+  position: relative
+  z-index: 1
+  display: block
+  background: $white
+  min-width: 270px
+  height: 600px
+
+  .card-info
+    position: absolute
+    bottom: 0
+    background: $white
+    width: 100%
+    padding: 30px
+
+    .title
+      margin: 0
+      padding: 0 0 10px
+      color: #333333
+      font-size: 26px
+      font-weight: 700
+
+    .sub-title
+      margin: 0
+      padding: 0 0 20px
+      color: $red
+      font-size: 20px
+      font-weight: 400
+
+    .time-comments
+      margin: 30px 0 0
+      color: #999999
+
+    .timestamp
+      margin: 0 16px 0 0
+
+  .category
+    position: absolute
+    top: -40px
+    left: 0
+    background: $red
+    padding: 10px 15px
+    color: $white
+    font-size: 14px
+    font-weight: 600
+    letter-spacing: 1px
+    text-transform: uppercase
+
+  .pic
+    height: 400px
+    overflow: hidden
+
+    img
+      display: block
+      width: 100%
+
+    .date
+      position: absolute
+      top: 20px
+      right: 20px
+      z-index: 1
+      background: $red
+      width: 55px
+      height: 55px
+      padding: 5.5px 0
+      -webkit-border-radius: 100%
+      -moz-border-radius: 100%
+      border-radius: 100%
+      color: $white
+      font-weight: 700
+      text-align: center
+      -webkit-box-sizing: border-box
+      -moz-box-sizing: border-box
+      box-sizing: border-box
+
+      .day
+        font-size: 18px
+
+      .month
+        font-size: 12px
+        text-transform: uppercase

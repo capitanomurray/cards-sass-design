@@ -1,4 +1,83 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #f2f2f2; }
+
+.info {
+  width: 300px;
+  margin: 50px auto;
+  text-align: center; }
+  .info h1 {
+    font-size: 20px; }
+  .info .underline {
+    border-bottom: 4px solid #e74c3c; }
+
 .card {
-  border: 2px solid #000;
-  padding: 20px;
-  margin: 20px; }
+  position: relative;
+  z-index: 1;
+  display: block;
+  background: #ffffff;
+  min-width: 270px;
+  height: 600px; }
+  .card .card-info {
+    position: absolute;
+    bottom: 0;
+    background: #ffffff;
+    width: 100%;
+    padding: 30px; }
+    .card .card-info .title {
+      margin: 0;
+      padding: 0 0 10px;
+      color: #333333;
+      font-size: 26px;
+      font-weight: 700; }
+    .card .card-info .sub-title {
+      margin: 0;
+      padding: 0 0 20px;
+      color: #e74c3c;
+      font-size: 20px;
+      font-weight: 400; }
+    .card .card-info .time-comments {
+      margin: 30px 0 0;
+      color: #999999; }
+    .card .card-info .timestamp {
+      margin: 0 16px 0 0; }
+  .card .category {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #e74c3c;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
+  .card .pic {
+    height: 400px;
+    overflow: hidden; }
+    .card .pic img {
+      display: block;
+      width: 100%; }
+    .card .pic .date {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+      background: #e74c3c;
+      width: 55px;
+      height: 55px;
+      padding: 5.5px 0;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      color: #ffffff;
+      font-weight: 700;
+      text-align: center;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      .card .pic .date .day {
+        font-size: 18px; }
+      .card .pic .date .month {
+        font-size: 12px;
+        text-transform: uppercase; }
