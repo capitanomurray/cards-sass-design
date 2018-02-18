@@ -1,5 +1,6 @@
 body {
-  font-family: 'Montserrat', sans-serif; }
+  font-family: 'Montserrat', sans-serif;
+  background: #f2f2f2; }
 
 .info {
   width: 300px;
@@ -16,8 +17,49 @@ body {
   min-width: 270px;
   height: 470px;
   text-align: center; }
+  .card .card-info {
+    position: absolute;
+    bottom: 0;
+    background: #ffffff;
+    width: 100%;
+    padding: 30px; }
+  .card .category {
+    position: absolute;
+    top: -40px;
+    left: 0;
+    background: #e74c3c;
+    padding: 10px 15px;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase; }
   .card .pic {
-    height: 400px; }
+    height: 400px;
+    overflow: hidden; }
     .card .pic img {
       display: block;
       width: 100%; }
+    .card .pic .date {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      z-index: 1;
+      background: #e74c3c;
+      width: 55px;
+      height: 55px;
+      padding: 5.5px 0;
+      -webkit-border-radius: 100%;
+      -moz-border-radius: 100%;
+      border-radius: 100%;
+      color: #ffffff;
+      font-weight: 700;
+      text-align: center;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box; }
+      .card .pic .date .day {
+        font-size: 18px; }
+      .card .pic .date .month {
+        font-size: 12px;
+        text-transform: uppercase; }
